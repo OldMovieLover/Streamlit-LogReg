@@ -82,8 +82,6 @@ if file is not None:
 
             st.write("## Результаты с применением логистической регрессии и сравнение результата с логистической регрессией в sklearn")
             if st.button("Обучить модель"):
-                X_train = train[features].values
-                y_train = train[target_column].values
 
                 model = LogReg(learning_rate, epochs)
                 model.fit(X_train, y_train)
